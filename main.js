@@ -1,7 +1,4 @@
 
-// To ensure Cypress tests work as expeded, add any code/functions that you would like to run on page load inside this function
-
-
 
 
 
@@ -68,7 +65,7 @@ function run() {
                  return;
              }
              if (reviewText) {
-                 const reviewList = document.getElementById("reviews");
+                 const reviewList = document.getElementById("reviews-list");
                  const movieTitle = select.options[select.selectedIndex].text;
                  const newReview = document.createElement("li");
                  const strongElement = document.createElement("strong");
@@ -114,10 +111,3 @@ function run() {
 setTimeout(run, 1000);
 
 
-
-
-// This function will "pause" the functionality expected on load long enough to allow Cypress to fully load
-// So that testing can work as expected for now
-// A non-hacky solution is being researched
-
-setTimeout(run, 1000);
