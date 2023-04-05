@@ -49,27 +49,32 @@ h2 {
     margin-bottom: 10px;
 }
 
-label {
-    display: block;
-    margin-bottom: 5px;
-}
-
-input[type="text"] {
-    width: 100%;
-    padding: 5px;
-    margin-bottom: 10px;
-    border-radius: 5px;
-    border: 1px solid gray;
-}
-
-input[type="submit"] {
-    background-color: gray;
-    color: black;
-    padding: 5px 10px;
-    border-radius: 5px;
-    border: none;
-    cursor: pointer;
-}
+form {
+	display: flex;
+	flex-wrap: wrap;
+  }
+  
+  label {
+	flex-basis: 100%;
+	margin-bottom: 5px;
+  }
+  
+  input[type="text"] {
+	flex: 1;
+	padding: 5px;
+	margin-right: 5px;
+	border-radius: 5px;
+	border: 1px solid gray;
+  }
+  
+  input[type="submit"] {
+	background-color: gray;
+	color: black;
+	padding: 5px 10px;
+	border-radius: 5px;
+	border: none;
+	cursor: pointer;
+  }
 
 #display-info {
     display: flex;
@@ -104,6 +109,10 @@ button {
     border-radius: 5px;
     border: none;
     cursor: pointer;
+}
+
+.section{
+	width: 60%;
 }
 
 @media only screen and (max-width: 500px) {
