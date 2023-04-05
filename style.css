@@ -3,6 +3,7 @@ body {
     font-family: monospace
 }
 
+
 header {
     background-color: rgb(36, 163, 179);
     width: 100%;
@@ -51,8 +52,8 @@ h2 {
   }
   
   input[type="submit"] {
-    background-color: skyblue;
-    color: white;
+    background-color: gray;
+    color: black;
     padding: 5px 10px;
     border-radius: 5px;
     border: none;
@@ -70,7 +71,7 @@ h2 {
   }
   
   #display-info p {
-    margin-top: 0;
+    margin-top: ;
     margin-bottom: 5px;
     font-weight: bold;
   }
@@ -86,10 +87,16 @@ h2 {
   }
   
   button {
-    background-color: skyblue;
-    color: white;
+    background-color: gray;
+    color: black;
     padding: 5px 10px;
     border-radius: 5px;
     border: none;
     cursor: pointer;
   }
+
+  @media only screen and (max-width: 500px) {
+    #reviews {
+    display: none;
+    }
+    }

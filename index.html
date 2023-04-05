@@ -19,10 +19,15 @@
         <section>
           <h2>Select a movie</h2>
           <select id="titles">
-            <option value="">--Select a movie--</option>
+            <option value="">---Select a movie---</option>
           </select>
         </section>
         <section>
+            <h2></h2>
+            <div class="movie details"></div>
+            <div id="display-info"></div>
+          </section>
+        <section class="reviews">
           <h2>Add a review</h2>
           <form>
             <label for="review">Your review</label>
@@ -31,15 +36,11 @@
           </form>
         </section>
         <section>
-          <h2>Movie details</h2>
-          <div id="display-info"></div>
-        </section>
-        <section>
           <h2>People</h2>
           <button id="show-people">Show People</button>
           <ol id="people-list"></ol>
         </section>
-        <section id="reviews">
+        <section>
           <h2>Reviews</h2>
           <ul id="reviews-list"></ul>
           <button id="reset-reviews">Reset Reviews</button>
