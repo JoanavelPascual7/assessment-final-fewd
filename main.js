@@ -1,9 +1,5 @@
 
 
-
-
-
-
 // To ensure Cypress tests work as expeded, add any code/functions that you would like to run on page load inside this function
 
 function run() {
@@ -109,5 +105,3 @@ function run() {
 // A non-hacky solution is being researched
 
 setTimeout(run, 1000);
-
-
