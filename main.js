@@ -68,7 +68,7 @@ function run() {
                  return;
              }
              if (reviewText) {
-                 const reviewList = document.getElementById("reviews-list");
+                 const reviewList = document.getElementById("reviews");
                  const movieTitle = select.options[select.selectedIndex].text;
                  const newReview = document.createElement("li");
                  const strongElement = document.createElement("strong");
